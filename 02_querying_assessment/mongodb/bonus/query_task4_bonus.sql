@@ -7,14 +7,17 @@
 --
 -- Hint: Write a query that uses an aggregate function on the Orders table
 -- to sum the total_price across all orders, returning the result as total_revenue.
-
 -- ---------------------------------------------------------------
 -- Your thinking process (required)
--- ---------------------------------------------------------------
+
+SELECT SUM(total_price) AS total_revenue
+FROM orders -- ---------------------------------------------------------------
 -- Before writing your query, explain in your own words how you
 -- interpreted the task, what data you need, which table(s) are
 -- involved, and what SQL concepts you plan to use.
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
+-- ใช้คำสั่ง SELECT เพื่อเรียกดูข้อมูลและ คำสั่ง SUMมาเพื่อหาผลรวมอ้างอิงจากในวงเล็บคือ (total_price) และให้ไปเก็บใน total_revenue โดยใช้คำสั่ง AS เพื่อแสดงผล
+-- ใช้คำสั่ง FROM เพื่อชี้ว่าไปเอามาจากตารางไหน
 --
