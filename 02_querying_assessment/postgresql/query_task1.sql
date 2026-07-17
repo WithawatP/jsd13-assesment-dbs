@@ -4,17 +4,22 @@
 -- so the designer can produce an accurate board without having to check each item manually.
 --
 -- Hint: Write a query to find the name and price of all menu items that are in the 'Side' category.
-
--- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
+ -- Bonus: The dataset is identical in the MongoDB database, meaning the same business insight can be retrieved.
 -- Write the equivalent query for MongoDB. See query_task1_bonus.mongodb.js
-
--- ---------------------------------------------------------------
+ -- ---------------------------------------------------------------
 -- Your thinking process (required)
--- ---------------------------------------------------------------
+
+SELECT name,
+       price
+FROM menuitems
+WHERE category = 'Side' -- ---------------------------------------------------------------
 -- Before writing your query, explain in your own words how you
 -- interpreted the task, what data you need, which table(s) are
 -- involved, and what SQL concepts you plan to use.
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
+-- ใช้คำสั่ง SELECT เพื่อเรียกดึงข้อมูลมา โดยกำหนดให้ดึงแค่ name และ price
+-- ใช้ FROM เพิ่งชี้ว่าเอามาจากตารางไหน
+-- กำหนดเงื่อนไขโดยการใช้ WHERE และตั้งเงื่อนไขให้ category มีค่าเท่ากับ Side
 --
