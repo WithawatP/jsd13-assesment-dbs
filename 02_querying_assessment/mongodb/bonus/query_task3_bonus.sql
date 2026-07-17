@@ -7,9 +7,13 @@
 --
 -- Hint: Write a query to find the name of all rows in the Ingredients table
 -- where the stock_level is greater than or equal to 100.
-
--- ---------------------------------------------------------------
+ -- ---------------------------------------------------------------
 -- Your thinking process (required)
+
+SELECT *
+FROM ingredients
+WHERE stock_level >= 100;
+
 -- ---------------------------------------------------------------
 -- Before writing your query, explain in your own words how you
 -- interpreted the task, what data you need, which table(s) are
@@ -17,4 +21,6 @@
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
---
+-- กำหนดให้ดึงข้อมูลทั้งหมดมาโดยใช้คำสั่ง SELECT และดึงทั้งหมดคือ *
+-- จากนั้นใช้คำสั่ง FROM คือให้ดึงมาจากตารางไหน โจทย์คือ ingredients
+-- กำหนดเงื่อนไขให้การดึงข้อมูลว่าให้ stock_level มากกว่าหรือเท่ากับ 100 โดยการใช้ WHERE เพื่อกำหนดเงื่อนไขและ ใช้เครื่องหมาย >= ในการกำหนดตามโจทย์
