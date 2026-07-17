@@ -7,10 +7,10 @@
 --
 -- Hint: Write a query to find the name of all rows in the Ingredients table
 -- where the stock_level is greater than or equal to 100.
- -- ---------------------------------------------------------------
+-- ---------------------------------------------------------------
 -- Your thinking process (required)
 
-SELECT *
+SELECT name
 FROM ingredients
 WHERE stock_level >= 100;
 
@@ -21,6 +21,6 @@ WHERE stock_level >= 100;
 -- Write in English or Thai. Do not skip this step.
 --
 -- Your thinking:
--- กำหนดให้ดึงข้อมูลทั้งหมดมาโดยใช้คำสั่ง SELECT และดึงทั้งหมดคือ *
+-- กำหนดให้ดึงข้อมูลทั้งหมดมาโดยใช้คำสั่ง SELECT และดึงทั้งหมดคือ * (Update! เมื่อกี้คิดว่าโจทย์เดียวกันกับข้อหลักครับ อ่านอีกทีคือให้เอาแค่ชื่อเลยเปลี่ยนจาก * เป็น name แทน โกเมนนาไซคับ)
 -- จากนั้นใช้คำสั่ง FROM คือให้ดึงมาจากตารางไหน โจทย์คือ ingredients
 -- กำหนดเงื่อนไขให้การดึงข้อมูลว่าให้ stock_level มากกว่าหรือเท่ากับ 100 โดยการใช้ WHERE เพื่อกำหนดเงื่อนไขและ ใช้เครื่องหมาย >= ในการกำหนดตามโจทย์
